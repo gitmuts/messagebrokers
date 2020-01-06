@@ -29,7 +29,7 @@ public class RabbitPublishToQueue {
             List<Customer> customers = genDataService.getCustomers(100);
 
             for(Customer customer: customers){
-                log.info("Publishing {}", customer);
+
                 rabbitTemplate.convertAndSend("customers", customer);
             }
         }catch (Exception e){
