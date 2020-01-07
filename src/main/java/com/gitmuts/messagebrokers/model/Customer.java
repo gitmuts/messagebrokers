@@ -2,11 +2,12 @@ package com.gitmuts.messagebrokers.model;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
-public class Customer {
+public class Customer implements Serializable {
     private String name;
     private Date dob;
     private BigDecimal balance;
