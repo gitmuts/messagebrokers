@@ -23,7 +23,7 @@ public class PublishToQueue {
 
     public void publish() {
         try{
-            List<Customer> customers = genDataService.getCustomers(10);
+            List<Customer> customers = genDataService.getCustomers(2);
 
 
             for(Customer customer: customers) {

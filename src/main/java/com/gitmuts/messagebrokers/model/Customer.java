@@ -15,4 +15,5 @@ public class Customer implements Serializable {
     private String address;
     private String phoneNumber;
     private Integer idNumber;
+    private String segment;
 }
